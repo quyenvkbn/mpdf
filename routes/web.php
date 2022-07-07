@@ -13,10 +13,11 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+ 
 Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/pdf', [TestPDF::class, 'index']);
-Route::get('/pdf1', [TestPDF::class, 'webindex']);
+Route::get('/bot', [TestPDF::class, 'bot']);
+Route::get('/psx_son', [TestPDF::class, 'psx_son']);
+Route::get('/pxk_son', [TestPDF::class, 'pxk_son']);
